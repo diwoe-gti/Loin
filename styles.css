@@ -60,10 +60,10 @@
             background-color: #f98900;
         }
 
-        /* Logo*/
+        /* Logo google*/
         .google{
             display: block;
-            width: 15%;
+            width: 50px;
             height: auto;
         }
 
@@ -75,10 +75,10 @@
             background-color: #19b7c3;
         }
 
-     /* Logo*/
+     /* Logo facebook*/
        .facebook{
             display: block;
-            width: 15%;
+            width: 50px;
             height: auto;
             justify-content: s;
         }
