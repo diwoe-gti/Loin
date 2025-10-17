@@ -1,0 +1,143 @@
+      body {
+            font-family: Arial, sans-serif;
+           background: linear-gradient(#ff481b, #1732fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* กล่องคอนเทนเนอร์ล็อกอิน */
+        .login-box {
+            background-color: rgba(255, 253, 253, 0.626);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: center;
+            max-width: 450px;
+        }
+
+        .login-box h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+         /* สไตล์ปุ่มล็อกอินโซเชียล */
+        .social-login {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* ระยะห่างระหว่างปุ่ม */
+            margin-bottom: 25px;
+        }
+        
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            text-decoration: none;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Google */
+        .google-btn {
+            background-color: #ff6200; /* สีแดงของ Google */
+        }
+        .google-btn:hover {
+            background-color: #f98900;
+        }
+
+        /* Logo*/
+        .google{
+            display: block;
+            width: 15%;
+            height: auto;
+        }
+
+        /* Facebook */
+        .facebook-btn {
+            background-color: #4267b2; /* สีน้ำเงินของ Facebook */
+        }
+        .facebook-btn:hover {
+            background-color: #19b7c3;
+        }
+
+     /* Logo*/
+       .facebook{
+            display: block;
+            width: 15%;
+            height: auto;
+            justify-content: s;
+        }
+
+        /* ไอคอน */
+        .social-btn i {
+            font-size: 20px;
+            margin-right: 15px;
+            width: 20px; /* เพื่อให้ข้อความจัดเรียงสวยงาม */
+        }
+
+        /* เส้นแบ่ง "หรือ" */
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background-color: #7f7979;
+            margin: 0 10px;
+        }
+
+        /*ฟอร์มล็อกอินปกติ */
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .login-form button[type="submit"] {
+            width: 100%;
+            background-color: #547395;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-form button[type="submit"]:hover {
+            background-color: #00b300;
+        }
+        @media(max-width:600px){
+            .login-box{
+                padding: 1rem;
+            }
+        }
